@@ -1,0 +1,42 @@
+:root {
+    --txt-display1: 6.875rem;
+    --txt-display2: 5.25rem;
+    --txt-heading1: 4.75rem;
+    --txt-heading2: 4rem;
+    --txt-heading3: 3rem;
+    --txt-heading4: 2.5rem;
+    --txt-heading5: 2rem;
+    --txt-title: 1.25rem;
+    --txt-body1: 1.125rem;
+    --txt-body2: 1rem;
+    --txt-button: 1.125rem;
+
+    --text: #000;
+    --text-shade1: #606060;
+    --text-shade2: #8b8b8b;
+    --text-shade3: #adadad;
+
+    --primary: #5468e7;
+    --primary-shade: #d1ecfd;
+    --secondary: #c897e4;
+    --secondary-shade: #e8beff;
+    --dark: #232340;
+    --dark-shade: #323259;
+    --light: #ffffff;
+    --light-shade: #ededed;
+    --shadow: #d8d8d8;
+
+    --acent1: #ffc7df;
+    --acent1-shade: #ffadd0;
+    --acent2: #ffba79;
+    --acent2-shade: #ffce79;
+    --acent3: #9a97ed;
+    --acent3-shade: #908cff;
+
+    --gradient-light: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
+    --gradient-primary: linear-gradient(180deg, #3a8fff 0%, #0837ae 100%);
+    --gradient-dark: linear-gradient(0deg, rgba(50, 50, 89, 0.0001) 0%, #323259 72.97%);
+
+    --radius: 40px;
+    --radius-btn: 8px;
+}
