@@ -26,12 +26,12 @@
     --light-shade: #ededed;
     --shadow: #d8d8d8;
 
-    --acent1: #ffc7df;
-    --acent1-shade: #ffadd0;
-    --acent2: #ffba79;
-    --acent2-shade: #ffce79;
-    --acent3: #9a97ed;
-    --acent3-shade: #908cff;
+    --accent1: #ffc7df;
+    --accent1-shade: #ffadd0;
+    --accent2: #ffba79;
+    --accent2-shade: #ffce79;
+    --accent3: #9a97ed;
+    --accent3-shade: #908cff;
 
     --gradient-light: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
     --gradient-primary: linear-gradient(180deg, #3a8fff 0%, #0837ae 100%);
