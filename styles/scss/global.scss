@@ -1,6 +1,13 @@
 @import "../common/reset.css";
 @import "../common/variables.css";
 
+h1 {
+  line-height: 100.24px;
+}
+p {
+  line-height: 32px;
+}
+
 .page {
   background-image: url("../../assets/ilustration/line1.svg");
   background-repeat: no-repeat;
@@ -19,7 +26,9 @@
 @mixin btn {
   border-radius: var(--radius-btn);
   font-weight: 700;
+  font-size: var(--text-button);
   color: var(--light);
+  text-transform: capitalize;
   padding: 16px;
   max-width: 180px;
   width: 100%;
@@ -29,10 +38,13 @@
     font-weight: 600;
   }
 }
+.button__primary {
+  @include btn();
+  background-color: var(--primary);
+}
 .button__dark {
   @include btn();
   background-color: var(--dark);
-  font-size: var(--txt-button);
 }
 .button__menu-mobile {
   padding: 16px;
@@ -51,6 +63,7 @@
     .nav-menu__item a {
       font-size: var(--txt-button);
       font-weight: 600;
+      text-transform: capitalize;
       color: var(--text-shade2);
 
       &:hover {
@@ -61,30 +74,59 @@
       }
     }
   }
+  @media (max-width: 695px) {
+    .nav-menu,
+    #btn-contact {
+      display: none;
+    }
+    .button__menu-mobile {
+      display: initial;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 13.5px;
+  }
+  h1 {
+    line-height: 72px;
+  }
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-  .page {
-    background-position: 130px 10px;
-  }
-
   .container {
     padding: 24px;
   }
 }
 
-@media (max-width: 695px) {
-  .page {
-    background-position: 150px 10px;
+@media (max-width: 375px) {
+  html {
+    font-size: 10.35px;
   }
-  .nav-menu,
-  #btn-contact {
-    display: none;
+  h1 {
+    line-height: 56px;
   }
-  .button__menu-mobile {
-    display: initial;
+  p {
+    font-size: 16px !important;
+  }
+  .container {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 290px) {
+  html {
+    font-size: 9.5px;
+  }
+  h1 {
+    line-height: 52px;
+  }
+  p {
+    font-size: 12px !important;
+    line-height: 22px;
+  }
+  .container {
+    padding: 10px;
   }
 }
