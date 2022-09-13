@@ -9,11 +9,6 @@ p {
 }
 
 .page {
-  background-image: url("../../assets/ilustration/line1.svg");
-  background-repeat: no-repeat;
-  background-position: 230px 10px;
-  background-size: contain;
-  min-height: 100vh;
 }
 
 .container {
@@ -21,6 +16,7 @@ p {
   width: 100%;
   margin: auto;
   padding: 32px;
+  position: relative;
 }
 
 @mixin navigation {
@@ -52,6 +48,12 @@ p {
   padding: 16px;
   max-width: 180px;
   width: 100%;
+  transition: 0.3s;
+
+  &:hover {
+    filter: brightness(1.1);
+    transform: translate(-6px, -6px);
+  }
 
   @media (max-width: 768px) {
     max-width: 150px;
@@ -59,7 +61,6 @@ p {
   }
 }
 
-// TODO: fazer animação de click dos buttons
 .button__primary {
   @include btn();
   background-color: var(--primary);
@@ -68,9 +69,12 @@ p {
   @include btn();
   background-color: var(--dark);
 }
+
+#btn-menu {
+  display: none;
+}
 .button__menu-mobile {
   padding: 16px;
-  display: none;
 }
 .button__scroll {
   display: flex;
@@ -85,6 +89,30 @@ p {
     font-weight: 600;
   }
 }
+.button__page {
+  position: absolute;
+  top: -10px;
+  right: 50px;
+  gap: 10px;
+  display: flex;
+  z-index: 30px;
+
+  .button__page__next,
+  .button__page__prev {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--primary);
+    }
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -97,7 +125,7 @@ p {
   #btn-contact {
     display: none;
   }
-  .button__menu-mobile {
+  #btn-menu {
     display: initial;
   }
 }
@@ -119,48 +147,9 @@ p {
 
   @include navigation();
 }
-@media (max-width: 1024px) {
-  html {
-    font-size: 13.5px;
-  }
-  h1 {
-    line-height: 72px;
-  }
-}
 
-@media (max-width: 768px) {
-  .container {
-    padding: 24px;
-  }
-}
-
-@media (max-width: 375px) {
-  html {
-    font-size: 10.35px;
-  }
-  h1 {
-    line-height: 56px;
-  }
-  p {
-    font-size: 16px !important;
-  }
-  .container {
-    padding: 12px;
-  }
-}
-
-@media (max-width: 290px) {
-  html {
-    font-size: 9.5px;
-  }
-  h1 {
-    line-height: 52px;
-  }
-  p {
-    font-size: 12px !important;
-    line-height: 22px;
-  }
-  .container {
-    padding: 10px;
+@media (max-width: 600px) {
+  .footer__text {
+    max-width: 300px !important;
   }
 }
