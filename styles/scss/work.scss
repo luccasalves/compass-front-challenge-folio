@@ -1,4 +1,8 @@
 .work {
+  .work-headline {
+    margin-bottom: 20px !important;
+  }
+
   .title-box {
     display: flex;
     justify-content: space-between;
@@ -126,6 +130,7 @@
 @media (max-width: 768px) {
   .work-headline {
     padding-left: 0 !important;
+    margin-bottom: 20px !important;
   }
   .work__main {
     flex-wrap: wrap;
@@ -151,8 +156,8 @@
   .card__call-action {
     .call-action__text-box {
       h1 {
-        font-size: 2.5rem !important;
-        line-height: 40px !important;
+        font-size: 3.5rem !important;
+        line-height: 50px !important;
       }
     }
   }
