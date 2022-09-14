@@ -135,6 +135,12 @@ p {
   padding: 6px 16px;
   margin-bottom: 20px;
 }
+
+.button__apply {
+  @include btn();
+  color: var(--primary);
+  background-color: var(--light);
+}
 .header {
   display: flex;
   justify-content: space-between;

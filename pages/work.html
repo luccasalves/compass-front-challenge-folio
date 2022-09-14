@@ -53,7 +53,7 @@
     </header>
 
     <main class="work container">
-        <section class="headline pl work-headeline">
+        <section class="headline pl work-headline">
             <p class="headline__subtitle primary-text">01 - Who We Are</p>
 
             <div class="title-box">
@@ -96,6 +96,28 @@
 
         </section>
 
+        <section class="call-action container">
+            <div class="card__call-action">
+                <div class="illustration">
+
+                    <img src="../assets/ilustration/phone2.png" alt="illustration">
+                </div>
+
+                <div class="call-action__text-box">
+                    <p>05 - Call to action</p>
+                    <h1>
+                        We Are Looking for Talented Designers
+                    </h1>
+
+                    <button type="button" class="button__apply" onclick="redirect()">
+                        Apply Now
+                    </button>
+
+                </div>
+                <img class="shape" src="../assets/ilustration/shape3.png" alt="shape">
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
@@ -125,5 +147,11 @@
             </ul>
         </nav>
     </footer>
+
+    <script>
+        function redirect() {
+            window.open('404', '_self')
+        }
+    </script>
 
 </html>
