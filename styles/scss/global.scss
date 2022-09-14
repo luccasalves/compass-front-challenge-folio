@@ -103,7 +103,8 @@ p {
   z-index: 30px;
 
   .button__page__next,
-  .button__page__prev {
+  .button__page__prev,
+  bu {
     width: 60px;
     height: 60px;
     display: flex;
@@ -117,6 +118,22 @@ p {
       background-color: var(--primary);
     }
   }
+}
+.button__next--primary {
+  padding: 20px;
+  border-radius: 50px;
+  background-color: var(--primary);
+  position: absolute;
+  right: -30px;
+  top: 100px;
+}
+.button__featured {
+  background-color: var(--accent3);
+  color: var(--light);
+  font-size: var(--txt-button);
+  border-radius: 16px;
+  padding: 6px 16px;
+  margin-bottom: 20px;
 }
 .header {
   display: flex;
