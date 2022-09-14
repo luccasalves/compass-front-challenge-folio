@@ -59,32 +59,13 @@
       right: 1px;
       z-index: 10;
     }
-    .about-illustration,
-    .about__headline {
+    .about-illustration {
       position: relative;
       z-index: 20;
     }
     .about-illustration {
       width: 80%;
       margin-bottom: 50px;
-    }
-
-    .about__headline {
-      position: relative;
-      margin-bottom: 100px;
-
-      .headline__subtitle {
-        font-size: var(--text-body1);
-        font-weight: 600;
-        margin-bottom: 24px;
-      }
-
-      .headline__title {
-        font-size: var(--text-heading2);
-        max-width: 700px;
-        width: 100%;
-        line-height: 72px;
-      }
     }
 
     .about__footer-content {

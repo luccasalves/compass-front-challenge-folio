@@ -8,15 +8,20 @@ p {
   line-height: 32px;
 }
 
-.page {
-}
-
 .container {
   max-width: 1440px;
   width: 100%;
   margin: auto;
   padding: 32px;
   position: relative;
+}
+
+.primary-text {
+  color: var(--primary) !important;
+}
+
+.pl {
+  padding-left: 125px;
 }
 
 @mixin navigation {
@@ -119,6 +124,26 @@ p {
   align-items: center;
 
   @include navigation();
+}
+
+.headline {
+  position: relative;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 20;
+
+  .headline__subtitle {
+    font-size: var(--text-body1);
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .headline__title {
+    font-size: var(--text-heading2);
+    max-width: 700px;
+    width: 100%;
+    line-height: 72px;
+  }
 }
 @media (max-width: 695px) {
   .nav-menu,
