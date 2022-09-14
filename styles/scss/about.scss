@@ -59,11 +59,10 @@
       right: 1px;
       z-index: 10;
     }
+
     .about-illustration {
       position: relative;
       z-index: 20;
-    }
-    .about-illustration {
       width: 80%;
       margin-bottom: 50px;
     }
@@ -122,5 +121,14 @@
 @media (max-width: 1024px) {
   .about__side {
     display: none !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .about__main {
+    padding-left: 0 !important;
+  }
+  .about-illustration {
+    margin-left: 30px;
   }
 }

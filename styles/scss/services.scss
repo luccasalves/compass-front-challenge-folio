@@ -4,6 +4,7 @@
 .services {
   background-image: url("../../assets/ilustration/line3.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 
   .grid-card {
     display: flex;
@@ -49,6 +50,46 @@
       }
     }
   }
+
+  .achievement {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap-reverse;
+    .box-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
+      background-color: var(--accent1);
+
+      img {
+        max-width: 350px;
+        width: 100%;
+      }
+    }
+
+    .achievement-text {
+      max-width: 550px;
+      width: 100%;
+      .subtitle {
+        display: flex;
+        gap: 50px;
+
+        p {
+          font-size: var(--text-body1);
+          font-weight: 500;
+          color: var(--text-shade2);
+        }
+      }
+      .title {
+        line-height: 40px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1225px) {
@@ -75,5 +116,10 @@
 @media (max-width: 578px) {
   .card {
     height: 230px !important;
+  }
+  .achievement-text {
+    .title {
+      text-align: center !important;
+    }
   }
 }
