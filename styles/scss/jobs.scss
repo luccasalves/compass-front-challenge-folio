@@ -72,6 +72,80 @@
     }
   }
 }
+.call-action {
+  .card__call-action {
+    cursor: pointer;
+
+    background-color: var(--primary);
+    padding: 20px;
+    border-radius: 40px;
+    height: 700px;
+
+    background-image: url("../../assets/ilustration/line3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--light);
+    transition: 0.3s;
+
+    p {
+      font-size: var(--text-title);
+    }
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    .call-action__headline {
+      text-align: center;
+      h1 {
+        font-size: var(--text-heading5);
+        max-width: 600px;
+        line-height: 52px;
+      }
+    }
+    .call-action__main {
+      margin-top: 150px;
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+
+      .right {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        font-size: var(--text-heading2);
+        max-width: 400px;
+        line-height: 64px;
+      }
+
+      p {
+        font-size: var(--text-heading6);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .call-action__main {
+    flex-wrap: wrap;
+
+    .call {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center !important;
+    }
+  }
+}
 
 @media (max-width: 700px) {
   .jobs {
