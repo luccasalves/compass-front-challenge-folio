@@ -1,4 +1,7 @@
 .work {
+  p {
+    font-size: var(--text-body1) !important;
+  }
   .work-headline {
     margin-bottom: 100px !important;
   }
@@ -155,6 +158,16 @@
     flex-direction: column;
     gap: 20px;
     margin-bottom: 50px;
+    color: black;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.03);
+
+      .arrow-stroke {
+        right: -45px !important;
+      }
+    }
 
     .card__title {
       font-size: var(--text-heading5);
@@ -165,13 +178,23 @@
       width: 100%;
       border-radius: 16px;
       padding: 20px;
+      position: relative;
 
       img {
         width: 100%;
       }
+      .arrow-stroke {
+        width: 50px;
+        position: absolute;
+        right: -25px;
+        top: 90px;
+        transform: rotate(-90deg);
+        transition: 0.3s;
+      }
     }
   }
 }
+
 @media (max-width: 1024px) {
   .grid-card {
     padding: 0 50px !important;
