@@ -51,7 +51,7 @@
   }
 
   .achievement {
-    margin-top: 100px;
+    margin-top: 200px;
     display: flex;
     justify-content: space-evenly;
 
@@ -72,11 +72,13 @@
     }
 
     .achievement-text {
-      max-width: 550px;
+      max-width: 500px;
+      text-align: center;
       width: 100%;
       .subtitle {
         display: flex;
         gap: 50px;
+        margin-bottom: 20px;
 
         p {
           font-size: var(--text-body1);
@@ -85,9 +87,14 @@
         }
       }
       .title {
-        line-height: 40px;
+        line-height: 30px;
       }
     }
+  }
+
+  .number-box {
+    margin: auto;
+    margin-bottom: 50px;
   }
 }
 
