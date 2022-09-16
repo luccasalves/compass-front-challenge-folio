@@ -66,9 +66,18 @@
       display: flex;
       justify-content: center;
       position: relative;
+      margin: 20px;
+      transition: 0.3s;
 
       img {
         width: 90%;
+      }
+
+      &:hover {
+        transform: scale(1.03);
+        .button__next--primary {
+          right: -40px;
+        }
       }
     }
   }

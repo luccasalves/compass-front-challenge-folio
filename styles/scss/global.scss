@@ -120,12 +120,22 @@ p {
   }
 }
 .button__next--primary {
-  padding: 20px;
-  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   background-color: var(--primary);
   position: absolute;
-  right: -30px;
+  right: -20px;
   top: 100px;
+  transition: 0.3s;
+
+  img {
+    width: 20px !important;
+  }
 }
 .button__featured {
   background-color: var(--accent3);
