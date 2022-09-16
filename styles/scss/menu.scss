@@ -1,0 +1,50 @@
+@import "../common/reset.css";
+@import "../common/variables.css";
+
+.drawer {
+  background-color: var(--dark);
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/ilustration/line-menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .drawer__header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .drawer__nav {
+    font-size: var(--text-title);
+    font-weight: 600;
+    ul li {
+      margin-bottom: 30px;
+      a {
+        text-transform: capitalize;
+        color: var(--text-shade3);
+        &:hover {
+          color: var(--light);
+        }
+      }
+    }
+  }
+
+  .drawer__footer {
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    gap: 25px;
+    align-items: center;
+  }
+}
+
+.close {
+  cursor: pointer;
+}

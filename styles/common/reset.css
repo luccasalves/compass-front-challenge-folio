@@ -18,6 +18,10 @@ ul {
     line-height: 1;
 }
 
+body {
+    background: #f6f4f6;
+}
+
 a {
     text-decoration: none;
 }

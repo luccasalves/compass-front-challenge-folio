@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/symbol/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/css/menu.min.css">
+    <title>Folio</title>
+</head>
+
+<body>
+
+    <main class="drawer">
+        <section class="drawer__header">
+            <a href="./home.html">
+                <img src="../assets/symbol/logo-icon.svg" alt="logo">
+            </a>
+            <img src="../assets/symbol/close-icon.svg" alt="close" class="close" onclick="backPage()">
+        </section>
+        <nav class="drawer__nav">
+            <ul>
+                <li class="item">
+                    <a href="./about.html">about</a>
+                </li>
+                <li class="item">
+                    <a href="./services.html">services</a>
+                </li>
+                <li class="item">
+                    <a href="./work.html">work</a>
+                </li>
+
+                <li class="item">
+                    <a href="./jobs.html">jobs</a>
+                </li>
+            </ul>
+        </nav>
+
+        <footer class="drawer__footer">
+
+            <a href="404">
+                <img src="../assets/symbol/fb-icon.svg" alt="icon">
+            </a>
+            <a href="404">
+                <img src="../assets/symbol/ytb-icon.svg" alt="icon">
+            </a>
+            <a href="404">
+                <img src="../assets/symbol/insta-icon.svg" alt="icon">
+            </a>
+
+        </footer>
+
+    </main>
+
+</body>
+
+<script>
+    function backPage() {
+        history.back()
+    }
+</script>
+
+</html>
